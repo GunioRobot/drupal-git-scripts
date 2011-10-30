@@ -1,6 +1,6 @@
 #!/bin/sh
 # TODO Someday support:
-# [--branch <branch name> | --calculate-branches] 
+# [--branch <branch name> | --calculate-branches]
 #
 
 if [ -z "$1" ]; then

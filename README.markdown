@@ -1,15 +1,15 @@
 # drupal-git-scripts #
 
-This set of scripts allows Drupal developers full interoperation between an 
+This set of scripts allows Drupal developers full interoperation between an
 all-git local environment and Drupal's CVS repositories. "All-git environment"
-means that you can create a full drupal instance by cloning off of the git 
+means that you can create a full drupal instance by cloning off of the git
 repositories created by this script. Core, contrib, everything.
 "Interoperation" means that your local repositories can chase very closely
 after CVS commits made in contrib, and seamlessly integrate those into the
 environment you've created using standard git fetch/merge type operations.
 
 While these scripts can handle core, the repo generated will differ from the
-semi-canonical git mirror of core (http://github.com/drupal/drupal); these 
+semi-canonical git mirror of core (http://github.com/drupal/drupal); these
 scripts strip CVS keywords in order to make CVS interoperation cleaner, but
 that mirror does not. This results in differing commit IDs. So you may want
 to use that mirror for core, instead.

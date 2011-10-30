@@ -26,7 +26,7 @@ syncItem() {
   echo "Syncing directories for module, $1."
   # Update or build our cache directory.
   gitCVSSync $1
-  
+
   # Update or build our frontend git repository.
   updateGitRepo $1
 
@@ -62,7 +62,7 @@ updateBranches() {
     if [ ! -d $GITSRV/$GIT_MODULE_BASE/.cvsco/$1/$branch ]; then
       newBranch $1 $branch
     elif [ $branch != "#CVSPS.NO.BRANCH" ]; then
-      cd $GITSRV/$GIT_MODULE_BASE/.cvsco/$1/$branch/ 
+      cd $GITSRV/$GIT_MODULE_BASE/.cvsco/$1/$branch/
       cvs -Q -d$CVSEXTERNAL up -dRP > /dev/null
       cd - > /dev/null
     fi
